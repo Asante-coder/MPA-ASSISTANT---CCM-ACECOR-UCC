@@ -39,11 +39,13 @@ def get_api_key() -> str:
     Passing the key explicitly avoids race conditions when cached
     functions are called from background threads before os.environ is set.
     """
+    key = ""
     if "OPENAI_API_KEY" in st.secrets:
-        return st.secrets["OPENAI_API_KEY"]
-    key = os.environ.get("OPENAI_API_KEY", "")
+        key = str(st.secrets["OPENAI_API_KEY"]).strip()
     if not key:
-        st.error("OPENAI_API_KEY is not set. Add it to .env (local) or Streamlit Secrets (cloud).")
+        key = os.environ.get("OPENAI_API_KEY", "").strip()
+    if not key or not key.startswith("sk-"):
+        st.error("A valid OPENAI_API_KEY was not found. Add it to .env (local) or Streamlit Secrets (cloud).")
         st.stop()
     return key
 
