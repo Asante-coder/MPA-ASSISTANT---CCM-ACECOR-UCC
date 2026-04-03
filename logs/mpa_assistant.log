@@ -190,3 +190,61 @@
 2026-04-03 12:55:47 | INFO     | app | Response generated | sources=5 | fallback=False | 13.00s
 2026-04-03 12:58:55 | INFO     | app | Query received | module_id=all | query='Key stakeholders for MPA Implementation in Ghana'
 2026-04-03 12:59:07 | INFO     | app | Response generated | sources=5 | fallback=False | 12.36s
+2026-04-03 13:36:21 | INFO     | ingest | === MPA Knowledge Base Ingestion (Enhanced RAG + Vision OCR) ===
+2026-04-03 13:36:21 | INFO     | ingest | [1/3] Loading PDFs with text + image extraction...
+2026-04-03 13:36:25 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 13:39:39 | INFO     | ingest | Loaded: Module 1. Introduction to MPAs.pdf | pages=26 | images OCR'd=47
+2026-04-03 13:39:57 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 13:42:47 | INFO     | ingest | Loaded: Module 2. MPAs around the world.pdf | pages=28 | images OCR'd=58
+2026-04-03 13:45:31 | INFO     | ingest | Loaded: Module 3. MPAs in Ghana_modified.pdf | pages=21 | images OCR'd=75
+2026-04-03 13:46:28 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 13:47:17 | INFO     | ingest | Loaded: Module 4. MPA identification (1).pdf | pages=22 | images OCR'd=53
+2026-04-03 13:47:59 | DEBUG    | ingest | Skipping image xref=70: not enough image data
+2026-04-03 13:48:03 | DEBUG    | ingest | Skipping image xref=70: not enough image data
+2026-04-03 13:51:02 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 13:51:05 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 13:51:28 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 13:51:39 | INFO     | ingest | Loaded: Module 6. MPA Monitoring_Updated Feb 24 2026_Final.pdf | pages=47 | images OCR'd=110
+2026-04-03 13:59:15 | INFO     | ingest | Loaded: Module 7. MPA and MSP.pdf | pages=77 | images OCR'd=212
+2026-04-03 13:59:17 | INFO     | ingest | Loaded: TimeTable-MPA short course_270226.pdf | pages=1 | images OCR'd=2
+2026-04-03 13:59:17 | INFO     | ingest | Total pages loaded: 222
+2026-04-03 13:59:17 | INFO     | ingest | [2/3] Semantic chunking (topic-aware splits)...
+2026-04-03 14:01:15 | INFO     | ingest | Total semantic chunks created: 411
+2026-04-03 14:01:15 | INFO     | ingest | [3/3] Building FAISS index and saving BM25 corpus...
+2026-04-03 14:01:18 | INFO     | ingest | FAISS index  -> C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-03 14:01:18 | INFO     | ingest | BM25 corpus  -> C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-03 14:01:18 | INFO     | ingest | Ingestion complete.
+2026-04-03 14:10:10 | INFO     | app | Loading FAISS index from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-03 14:10:11 | INFO     | app | Loading BM25 corpus from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-03 14:10:12 | INFO     | app | Knowledge base ready: 411 docs | 1.90s
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=1 | docs=46 | 0.02s
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=2 | docs=51 | 0.04s
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=all | docs=411 | 0.05s
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=3 | docs=41 | 0.04s
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=1 | 0.05s
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=2 | 0.05s
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=all | 0.06s
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=3 | 0.05s
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=4 | docs=41 | 0.00s
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=6 | docs=88 | 0.00s
+2026-04-03 14:10:12 | INFO     | app | BM25 retriever built | module_id=7 | docs=142 | 0.01s
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=4 | 0.02s
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=6 | 0.02s
+2026-04-03 14:10:12 | INFO     | app | Chain built | module_id=7 | 0.01s
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 14:10:12 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 14:10:19 | INFO     | app | Query received | module_id=all | query='What is MPA'
+2026-04-03 14:10:23 | INFO     | app | Response generated | sources=5 | fallback=False | 3.81s
+2026-04-03 14:10:52 | INFO     | app | Query received | module_id=all | query='The MPA course is sponsored by?'
+2026-04-03 14:10:58 | INFO     | app | Response generated | sources=5 | fallback=True | 5.94s
+2026-04-03 14:11:09 | INFO     | app | Query received | module_id=all | query='Which university hosted the course'
+2026-04-03 14:11:17 | INFO     | app | Response generated | sources=5 | fallback=False | 7.30s
+2026-04-03 14:11:35 | INFO     | app | Query received | module_id=all | query='Which centre?'
+2026-04-03 14:11:42 | INFO     | app | Response generated | sources=5 | fallback=False | 6.78s
+2026-04-03 14:11:54 | INFO     | app | Query received | module_id=all | query='No-take zones'
+2026-04-03 14:12:01 | INFO     | app | Response generated | sources=5 | fallback=False | 6.39s
