@@ -12,6 +12,7 @@ Performance optimisations:
 """
 
 import os
+import re
 import pickle
 import time
 import concurrent.futures
@@ -29,6 +30,13 @@ from logger import get_logger
 load_dotenv()
 
 log = get_logger("app")
+
+
+def normalize_text(text: str) -> str:
+    """Lowercase and collapse whitespace for consistent retrieval matching."""
+    text = text.lower()
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
 
 def get_api_key() -> str:
@@ -247,7 +255,7 @@ if user_input := st.chat_input("Ask about MPAs, zoning, MSP, or Ghana marine pol
                 user_input,
             )
             chain = get_chain(selected_module_id)
-            result = chain.invoke({"query": user_input})
+            result = chain.invoke({"query": normalize_text(user_input)})
             elapsed = time.perf_counter() - t_query
 
         answer = result["result"]

@@ -248,3 +248,70 @@
 2026-04-03 14:11:42 | INFO     | app | Response generated | sources=5 | fallback=False | 6.78s
 2026-04-03 14:11:54 | INFO     | app | Query received | module_id=all | query='No-take zones'
 2026-04-03 14:12:01 | INFO     | app | Response generated | sources=5 | fallback=False | 6.39s
+2026-04-03 14:59:08 | INFO     | app | Query received | module_id=all | query='zoni ng'
+2026-04-03 14:59:18 | INFO     | app | Response generated | sources=5 | fallback=False | 10.12s
+2026-04-03 14:59:24 | INFO     | app | Query received | module_id=all | query='Zoning'
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 14:59:48 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 14:59:54 | INFO     | app | Query received | module_id=all | query='zoning'
+2026-04-03 15:00:03 | INFO     | app | Response generated | sources=5 | fallback=False | 8.97s
+2026-04-03 15:17:58 | INFO     | app | Query received | module_id=all | query='Marin e '
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:18:07 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:18:16 | INFO     | app | Query received | module_id=all | query='marin e'
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:19:10 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:19:13 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:19:23 | INFO     | app | Query received | module_id=all | query='zoning'
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:21:06 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:21:15 | INFO     | app | Query received | module_id=all | query='zoning'
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:23:46 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:23:57 | INFO     | app | Query received | module_id=all | query='mpa'
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:27:44 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:27:52 | INFO     | app | Query received | module_id=all | query='mpa'
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=7

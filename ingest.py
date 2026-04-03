@@ -53,6 +53,13 @@ MODULE_TOPICS = {
 _openai_client = OpenAI()
 
 
+def normalize_text(text: str) -> str:
+    """Lowercase and collapse whitespace for consistent BM25 and embedding matching."""
+    text = text.lower()
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
 def extract_module_id(filename: str) -> int:
     match = re.search(r"Module\s+(\d+)", filename, re.IGNORECASE)
     return int(match.group(1)) if match else 0
@@ -171,7 +178,9 @@ def load_pdf_with_vision(filepath: str, filename: str) -> list[Document]:
         else:
             combined_text = page_text
 
-        if not combined_text.strip():
+        combined_text = normalize_text(combined_text)
+
+        if not combined_text:
             continue
 
         documents.append(Document(
