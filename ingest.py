@@ -19,7 +19,7 @@ import fitz  # PyMuPDF
 from PIL import Image
 from openai import OpenAI
 from dotenv import load_dotenv
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
