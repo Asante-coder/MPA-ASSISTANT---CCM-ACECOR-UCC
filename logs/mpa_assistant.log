@@ -1,0 +1,124 @@
+2026-04-02 16:31:48 | INFO     | app | Loading FAISS index from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-02 16:31:48 | INFO     | app | Loading BM25 corpus from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-02 16:31:48 | INFO     | app | Knowledge base loaded: 292 documents
+2026-04-02 16:32:38 | INFO     | app | Query received | module_id=4 | query='MPA Stakeholders'
+2026-04-02 16:32:44 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:33:02 | INFO     | test | Logger OK
+2026-04-02 16:33:41 | INFO     | ingest | === MPA Knowledge Base Ingestion (Advanced RAG) ===
+2026-04-02 16:33:41 | INFO     | ingest | [1/3] Loading & tagging PDFs...
+2026-04-02 16:33:42 | INFO     | ingest | Loaded: Module 1. Introduction to MPAs.pdf (26 pages)
+2026-04-02 16:33:42 | INFO     | ingest | Loaded: Module 2. MPAs around the world.pdf (28 pages)
+2026-04-02 16:33:43 | INFO     | ingest | Loaded: Module 3. MPAs in Ghana_modified.pdf (21 pages)
+2026-04-02 16:33:44 | INFO     | ingest | Loaded: Module 4. MPA identification (1).pdf (22 pages)
+2026-04-02 16:33:45 | INFO     | ingest | Loaded: Module 6. MPA Monitoring_Updated Feb 24 2026_Final.pdf (47 pages)
+2026-04-02 16:33:46 | INFO     | ingest | Loaded: Module 7. MPA and MSP.pdf (77 pages)
+2026-04-02 16:33:46 | INFO     | ingest | Loaded: TimeTable-MPA short course_270226.pdf (1 pages)
+2026-04-02 16:33:46 | INFO     | ingest | Total pages loaded: 222
+2026-04-02 16:33:46 | INFO     | ingest | [2/3] Semantic chunking (topic-aware splits)...
+2026-04-02 16:34:30 | INFO     | ingest | Total semantic chunks created: 292
+2026-04-02 16:34:30 | INFO     | ingest | [3/3] Building FAISS index and saving BM25 corpus...
+2026-04-02 16:34:33 | INFO     | ingest | FAISS index  -> C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-02 16:34:33 | INFO     | ingest | BM25 corpus  -> C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-02 16:34:33 | INFO     | ingest | Ingestion complete.
+2026-04-02 16:35:33 | INFO     | app | Query received | module_id=4 | query='Who are the MPA stakeholders'
+2026-04-02 16:35:33 | INFO     | app | Loading FAISS index from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-02 16:35:35 | INFO     | app | Loading BM25 corpus from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-02 16:35:35 | INFO     | app | Knowledge base loaded: 292 documents
+2026-04-02 16:35:39 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:36:16 | INFO     | app | Query received | module_id=4 | query='Learning objectives of module 4'
+2026-04-02 16:36:21 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:37:04 | INFO     | app | Query received | module_id=all | query='Learning objectives of module 4'
+2026-04-02 16:37:17 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:38:13 | INFO     | app | Query received | module_id=all | query='Your voices was on which day'
+2026-04-02 16:38:28 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:39:26 | INFO     | app | Query received | module_id=all | query='What are the ecosystem services'
+2026-04-02 16:39:34 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:40:24 | INFO     | app | Query received | module_id=all | query='MPA drivers'
+2026-04-02 16:40:30 | INFO     | app | Response generated | sources=5 | fallback=True
+2026-04-02 16:41:11 | INFO     | app | Query received | module_id=all | query='Ghana Policy framework on map'
+2026-04-02 16:41:18 | INFO     | app | Response generated | sources=5 | fallback=False
+2026-04-02 16:43:11 | INFO     | app | Loading FAISS index from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-02 16:43:12 | INFO     | app | Loading BM25 corpus from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-02 16:43:13 | INFO     | app | Knowledge base ready: 292 docs | 1.87s
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=1 | docs=30 | 0.03s
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=all | docs=292 | 0.05s
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=2 | docs=41 | 0.05s
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=3 | docs=28 | 0.06s
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=1 | 0.06s
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=all | 0.06s
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=4 | docs=31 | 0.00s
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=2 | 0.07s
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=3 | 0.07s
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=6 | docs=60 | 0.00s
+2026-04-02 16:43:13 | INFO     | app | BM25 retriever built | module_id=7 | docs=100 | 0.01s
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=4 | 0.02s
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=6 | 0.02s
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-02 16:43:13 | INFO     | app | Chain built | module_id=7 | 0.01s
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-02 16:43:13 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-02 16:43:56 | INFO     | app | Loading FAISS index from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-02 16:43:56 | INFO     | app | Loading BM25 corpus from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-02 16:43:58 | INFO     | app | Knowledge base ready: 292 docs | 1.60s
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=1 | docs=30 | 0.00s
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=2 | docs=41 | 0.01s
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=all | docs=292 | 0.04s
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=3 | docs=28 | 0.00s
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=1 | 0.04s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=2 | 0.04s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=all | 0.05s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=4 | docs=31 | 0.00s
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=3 | 0.02s
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=6 | docs=60 | 0.01s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-02 16:43:58 | INFO     | app | BM25 retriever built | module_id=7 | docs=100 | 0.01s
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=4 | 0.04s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=6 | 0.03s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-02 16:43:58 | INFO     | app | Chain built | module_id=7 | 0.02s
+2026-04-02 16:43:58 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-02 16:43:58 | INFO     | app | Query received | module_id=all | query='Ghana Policy framework on map'
+2026-04-02 16:44:03 | INFO     | app | Response generated | sources=5 | fallback=False | 4.56s
+2026-04-02 16:44:12 | INFO     | app | Query received | module_id=all | query='What are the ecosystem services'
+2026-04-02 16:44:16 | INFO     | app | Response generated | sources=5 | fallback=False | 4.91s
+2026-04-02 16:44:32 | INFO     | app | Query received | module_id=all | query='Learning objectives of module 4'
+2026-04-02 16:44:39 | INFO     | app | Response generated | sources=5 | fallback=False | 6.95s
+2026-04-02 16:45:20 | INFO     | app | Query received | module_id=all | query='Ghana’s Policy Framework For MPA \nDesignation '
+2026-04-02 16:45:24 | INFO     | app | Response generated | sources=5 | fallback=False | 4.40s
+2026-04-02 16:45:58 | INFO     | app | Query received | module_id=all | query='list all Ghana’s Policy Framework For MPA Designation'
+2026-04-02 16:46:05 | INFO     | app | Response generated | sources=5 | fallback=False | 6.94s
+2026-04-02 16:46:38 | INFO     | app | Query received | module_id=3 | query='list all Ghana’s Policy Framework For MPA Designation'
+2026-04-02 16:46:42 | INFO     | app | Response generated | sources=5 | fallback=False | 4.08s
+2026-04-02 16:47:43 | INFO     | app | Query received | module_id=3 | query='Why do we need MPA networks?'
+2026-04-02 16:47:50 | INFO     | app | Response generated | sources=5 | fallback=False | 7.13s
+2026-04-03 12:13:05 | INFO     | ingest | === MPA Knowledge Base Ingestion (Enhanced RAG + Vision OCR) ===
+2026-04-03 12:13:05 | INFO     | ingest | [1/3] Loading PDFs with text + image extraction...
+2026-04-03 12:15:06 | INFO     | ingest | Loaded: Module 1. Introduction to MPAs.pdf | pages=26 | images OCR'd=48
+2026-04-03 12:16:43 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 12:17:08 | INFO     | ingest | Loaded: Module 2. MPAs around the world.pdf | pages=28 | images OCR'd=58
+2026-04-03 12:19:21 | INFO     | ingest | Loaded: Module 3. MPAs in Ghana_modified.pdf | pages=21 | images OCR'd=75
+2026-04-03 12:20:47 | INFO     | ingest | Loaded: Module 4. MPA identification (1).pdf | pages=22 | images OCR'd=54
+2026-04-03 12:21:18 | DEBUG    | ingest | Skipping image xref=70: not enough image data
+2026-04-03 12:21:21 | DEBUG    | ingest | Skipping image xref=70: not enough image data
+2026-04-03 12:23:33 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 12:23:37 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 12:24:27 | INFO     | ingest | Loaded: Module 6. MPA Monitoring_Updated Feb 24 2026_Final.pdf | pages=47 | images OCR'd=111
+2026-04-03 12:26:50 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 12:31:16 | WARNING  | ingest | Vision OCR failed for an image: 'NoneType' object has no attribute 'strip'
+2026-04-03 12:31:16 | INFO     | ingest | Loaded: Module 7. MPA and MSP.pdf | pages=77 | images OCR'd=210
+2026-04-03 12:31:18 | INFO     | ingest | Loaded: TimeTable-MPA short course_270226.pdf | pages=1 | images OCR'd=2
+2026-04-03 12:31:18 | INFO     | ingest | Total pages loaded: 222
+2026-04-03 12:31:18 | INFO     | ingest | [2/3] Semantic chunking (topic-aware splits)...
+2026-04-03 12:33:35 | INFO     | ingest | Total semantic chunks created: 413
+2026-04-03 12:33:35 | INFO     | ingest | [3/3] Building FAISS index and saving BM25 corpus...
+2026-04-03 12:33:40 | INFO     | ingest | FAISS index  -> C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-03 12:33:40 | INFO     | ingest | BM25 corpus  -> C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-03 12:33:40 | INFO     | ingest | Ingestion complete.

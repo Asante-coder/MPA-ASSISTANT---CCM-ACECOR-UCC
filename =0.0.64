@@ -1,0 +1,12 @@
+Collecting langchain-experimental
+  Downloading langchain_experimental-0.4.1-py3-none-any.whl.metadata (1.3 kB)
+Collecting flashrank
+  Downloading FlashRank-0.2.10-py3-none-any.whl.metadata (14 kB)
+Collecting rank_bm25
+  Downloading rank_bm25-0.2.2-py3-none-any.whl.metadata (3.2 kB)
+Downloading langchain_experimental-0.4.1-py3-none-any.whl (210 kB)
+Downloading FlashRank-0.2.10-py3-none-any.whl (14 kB)
+Downloading rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)
+Installing collected packages: rank_bm25, langchain-experimental, flashrank
+
+Successfully installed flashrank-0.2.10 langchain-experimental-0.4.1 rank_bm25-0.2.2
