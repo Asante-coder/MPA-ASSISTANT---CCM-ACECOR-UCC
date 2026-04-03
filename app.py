@@ -28,11 +28,24 @@ from logger import get_logger
 
 load_dotenv()
 
-# On Streamlit Cloud .env is not available — pull key from st.secrets if present
-if "OPENAI_API_KEY" in st.secrets:
-    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-
 log = get_logger("app")
+
+
+def get_api_key() -> str:
+    """
+    Resolve the OpenAI API key in priority order:
+      1. Streamlit Secrets (Streamlit Cloud deployment)
+      2. Environment variable / .env file (local development)
+    Passing the key explicitly avoids race conditions when cached
+    functions are called from background threads before os.environ is set.
+    """
+    if "OPENAI_API_KEY" in st.secrets:
+        return st.secrets["OPENAI_API_KEY"]
+    key = os.environ.get("OPENAI_API_KEY", "")
+    if not key:
+        st.error("OPENAI_API_KEY is not set. Add it to .env (local) or Streamlit Secrets (cloud).")
+        st.stop()
+    return key
 
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 FAISS_DIR = os.path.join(BASE_DIR, "faiss_index")
@@ -70,15 +83,16 @@ MODULE_OPTIONS = {
 def load_resources():
     """Load FAISS index, raw docs, LLM, and reranker — cached for the session."""
     t0 = time.perf_counter()
+    api_key = get_api_key()
     log.info("Loading FAISS index from %s", FAISS_DIR)
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small", api_key=api_key)
     vectorstore = FAISS.load_local(
         FAISS_DIR, embeddings, allow_dangerous_deserialization=True
     )
     log.info("Loading BM25 corpus from %s", DOCS_PATH)
     with open(DOCS_PATH, "rb") as f:
         all_docs = pickle.load(f)
-    llm = ChatOpenAI(model="gpt-4o", temperature=0)
+    llm = ChatOpenAI(model="gpt-4o", temperature=0, api_key=api_key)
     reranker = FlashrankRerank(top_n=5)
     log.info(
         "Knowledge base ready: %d docs | %.2fs",
