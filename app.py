@@ -27,6 +27,11 @@ from langchain_classic.prompts import PromptTemplate
 from logger import get_logger
 
 load_dotenv()
+
+# On Streamlit Cloud .env is not available — pull key from st.secrets if present
+if "OPENAI_API_KEY" in st.secrets:
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
 log = get_logger("app")
 
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
