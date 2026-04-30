@@ -315,3 +315,39 @@
 2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=4
 2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=all
 2026-04-03 15:28:04 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:29:28 | INFO     | app | Loading FAISS index from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index
+2026-04-03 15:29:31 | INFO     | app | Loading BM25 corpus from C:\Users\FrancisAsanteNsiah\Desktop\STUFF\boj\opty\Africa Centre of Excellence in Coastal Resilience\MPA ASSISTANT - CCM(ACECOR) UCC\faiss_index\bm25_docs.pkl
+2026-04-03 15:29:33 | INFO     | app | Knowledge base ready: 411 docs | 4.16s
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=3 | docs=41 | 0.08s
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=all | docs=411 | 0.12s
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=2 | docs=51 | 0.12s
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=1 | docs=46 | 0.12s
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=3 | 0.13s
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=3
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=all | 0.14s
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=all
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=2 | 0.13s
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=1 | 0.13s
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=2
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=1
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=4 | docs=41 | 0.00s
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=6 | docs=88 | 0.01s
+2026-04-03 15:29:33 | INFO     | app | BM25 retriever built | module_id=7 | docs=142 | 0.03s
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=4 | 0.06s
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=6 | 0.05s
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=4
+2026-04-03 15:29:33 | INFO     | app | Chain built | module_id=7 | 0.04s
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=6
+2026-04-03 15:29:33 | DEBUG    | app | Pre-warmed chain for module_id=7
+2026-04-03 15:29:41 | INFO     | app | Query received | module_id=all | query='mpa'
+2026-04-03 15:30:03 | INFO     | app | Response generated | sources=5 | fallback=False | 22.33s
+2026-04-03 15:31:23 | INFO     | app | Query received | module_id=all | query='zon ing'
+2026-04-03 15:31:35 | INFO     | app | Response generated | sources=5 | fallback=False | 12.15s
+2026-04-03 15:31:47 | INFO     | app | Query received | module_id=all | query='zoning'
+2026-04-03 15:31:59 | INFO     | app | Response generated | sources=5 | fallback=False | 12.57s
+2026-04-03 15:32:17 | INFO     | app | Query received | module_id=all | query='Marine spatial planning'
+2026-04-03 15:32:26 | INFO     | app | Response generated | sources=5 | fallback=False | 8.89s
+2026-04-03 15:34:00 | INFO     | app | Query received | module_id=all | query='Marine spatial    planning'
+2026-04-03 15:34:07 | INFO     | app | Response generated | sources=5 | fallback=False | 7.08s
+2026-04-03 15:34:25 | INFO     | app | Query received | module_id=all | query='No-take    zones'
+2026-04-03 15:34:34 | INFO     | app | Response generated | sources=5 | fallback=False | 9.25s
